@@ -43,8 +43,8 @@
 
 // Для медіа-запиту ретини
 
-@mixin retina($type) {
-	@if type==retina {
+@mixin mq($type) {
+	@if $type ==retina {
 
 		@media screen and (min-device-pixel-ratio: 2),
 		screen and (min-resolution: 192dpi),

@@ -2,10 +2,31 @@
 	padding: 55px 0;
 	text-align: center;
 	background-color: var(--bgd-dark);
-	background-image: url('../images/bg-form/registration-bg-sm@2x-min.png');
+	background-image: url('../images/bg-form/registration-bg-sm-min.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+
+	@include mq(retina) {
+		background-image: url('../images/bg-form/registration-bg-sm@2x-min.png');
+	}
+
+
+	@include mq(tab) {
+		background-image: url('../images/bg-form/registration-bg-md-min.png');
+
+		@include mq(retina) {
+			background-image: url('../images/bg-form/registration-bg-md@2x-min.png');
+		}
+	}
+
+	@include mq(desk) {
+		background-image: url('../images/bg-form/registration-bg-big-min.png');
+
+		@include mq(retina) {
+			background-image: url('../images/bg-form/registration-bg-big@2x-min.png');
+		}
+	}
 
 	&__title {
 		font-weight: 800;
@@ -13,6 +34,11 @@
 		line-height: calc(18 / 14);
 		letter-spacing: 0.03em;
 		color: var(--light-text-color);
+
+		@include mq(tab) {
+			font-size: 46px;
+			line-height: calc(60 / 46);
+		}
 	}
 
 	&__accent-text {

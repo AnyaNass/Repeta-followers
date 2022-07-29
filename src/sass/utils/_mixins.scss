@@ -2,7 +2,7 @@
 @mixin mq($type) {
 	$mobile: 320px;
 	$tablet: 768px;
-	$desktop: 1200px;
+	$desktop: 1366px;
 
 	@if $type ==mob {
 		@media screen and (min-width: $mobile) {
@@ -43,8 +43,8 @@
 
 // Для медіа-запиту ретини
 
-@mixin retina($type) {
-	@if type==retina {
+@mixin mq($type) {
+	@if $type ==retina {
 
 		@media screen and (min-device-pixel-ratio: 2),
 		screen and (min-resolution: 192dpi),

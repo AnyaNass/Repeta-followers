@@ -1,4 +1,4 @@
-// Скрипт для відкриття-закриття меню, якщо зверстали дві окремі кнопки
+import "./js/mask"
 
 (() => {
 	const menuBtnOpen = document.querySelector('[data-menu-open]');

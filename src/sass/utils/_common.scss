@@ -29,7 +29,8 @@ main {
 	}
 
 	@include mq(desk) {
-		max-width: 1200px;
+		max-width: 1366px;
+		padding: 0 26px;
 	}
 }
 

@@ -1,5 +1,43 @@
 <header class="header">
-    <div class="container header__container"><a class="logo header_logo" href="#"><svg wight="128" height="45">
+    <div class="container header__container">
+        <a class="link logo header_logo" href="#"><svg width="128" height="45">
                 <use href="./images/symbol-defs.svg#icon-logo"></use>
-            </svg></a></div>
+            </svg></a>
+        <nav class=" header__nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="" class="nav__link">Studying program</a></li>
+                <li class="nav__list-item"><a href="" class="nav__link">about</a></li>
+                <li class="nav__list-item"><a href="" class="nav__link">training options</a></li>
+                <li class="nav__list-item"><a href="" class="nav__link">contacts</a></li>
+            </ul>
+        </nav>
+        <button class="button button--header" type="button">consultation by phone</button>
+        <button class="button-burg" type="button" data-menu-open><svg class="button-burg__icon" width="21" height="12">
+                <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg></button>
+    </div>
 </header>
+<div class="modal-menu" data-menu>
+    <a href="#" class="modal-logo">
+        <svg class="modal-logo__svg" width="80" height="30">
+            <use href="./images/symbol-defs.svg#icon-logo-white"></use>
+        </svg>
+    </a>
+    <button class="modal-menu__btn" data-menu-close>
+        <svg height="15" width="15">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+    </button>
+
+    <ul class="modal-menu__nav">
+        <li><a href="#">Studying program</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Training options</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+    <button class="button  button__menu" type="button">consultation by phone</button>
+
+
+
+
+</div>

@@ -9,8 +9,7 @@
 }
 
 .program-list {
-  padding-left: 24.5px;
-  margin-left: 52.5px;
+  padding-left: 100px;
 }
 
 .program-list__item:not(:last-child) {
@@ -31,6 +30,7 @@
 }
 
 .program-list__title {
+  position: relative;
   margin-bottom: 5px;
 
   font-size: 14px;
@@ -41,14 +41,17 @@
 
   &::before {
     display: inline-block;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    margin-left: -26px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     content: '';
-    margin-right: 20px;
-    margin-left: -31px;
+
     background-color: var(--accent);
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border: 1px solid var(--accent);
     border-radius: 50%;
   }

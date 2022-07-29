@@ -1,1 +1,121 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: var(--main-text-color);
+	background-color: var(--main-bgd-color);
+	letter-spacing: 0.08em;
+	user-select: none;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+main {
+	padding-top: 80px;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	@include mq(tab) {
+		max-width: 768px;
+		padding: 0 40px;
+	}
+
+	@include mq(desk) {
+		max-width: 1366px;
+		padding: 0 26px;
+	}
+}
+
+// Для кнопки клас .button та модифікатор .button--header
+.button {
+	min-width: 260px;
+	padding: 14px 0;
+
+	background-color: var(--accent);
+	border: 2px solid transparent;
+
+	color: var(--light-text-color);
+	font-weight: 700;
+	font-size: 12px;
+	line-height: calc(15 / 12);
+	letter-spacing: 0.08em;
+
+	transition: background-color var(--transition), color var(--transition), border var(--transition);
+
+	&:hover,
+	&:focus {
+		background-color: var(--main-bgd-color);
+		color: var(--accent);
+		border-color: var(--accent);
+	}
+
+	@include mq(desk) {
+		min-width: 354px;
+	}
+
+	&--header {
+		background-color: transparent;
+		color: var(--accent);
+		border-color: var(--accent);
+
+		&:hover,
+		&:focus {
+			color: var(--light-text-color);
+			background-color: var(--accent);
+			border-color: transparent;
+		}
+
+		@include mq(desk) {
+			min-width: 336px;
+		}
+	}
+}
+
+
+// Для заголовків секцій клас .section-title (темна за замовчуванням) і модифікатор .section-title--light
+.section-title {
+	font-weight: 800;
+	font-size: 20px;
+	line-height: calc(26 / 20);
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--deepdark-text-color);
+
+	@include mq(tab) {
+		font-size: 26px;
+		line-height: calc(34 / 26);
+	}
+
+	@include mq(desk) {
+		font-size: 46px;
+		line-height: calc(60 / 46);
+	}
+
+
+	&--light {
+		color: var(--light-text-color);
+	}
+}
+
+
+// Для скритих заголовків
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}

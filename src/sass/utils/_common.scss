@@ -1,10 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
-	font-weight: 700;
 	color: var(--main-text-color);
 	background-color: var(--main-bgd-color);
 	letter-spacing: 0.08em;
@@ -50,7 +48,8 @@ main {
 	line-height: calc(15 / 12);
 	letter-spacing: 0.08em;
 
-	transition: background-color var(--transition), color var(--transition), border var(--transition);
+	transition: background-color var(--transition), color var(--transition),
+		border var(--transition);
 
 	&:hover,
 	&:focus {
@@ -81,7 +80,6 @@ main {
 	}
 }
 
-
 // Для заголовків секцій клас .section-title (темна за замовчуванням) і модифікатор .section-title--light
 .section-title {
 	font-weight: 800;
@@ -101,12 +99,10 @@ main {
 		line-height: calc(60 / 46);
 	}
 
-
 	&--light {
 		color: var(--light-text-color);
 	}
 }
-
 
 // Для скритих заголовків
 .hidden {

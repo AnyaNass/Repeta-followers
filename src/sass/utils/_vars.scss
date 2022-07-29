@@ -1,13 +1,19 @@
 :root {
+	// COLORS
 	--accent: #FF6B09;
 
+	// For background
 	--main-bgd-color: #FFFFFF;
 	--bgd-dark: #111518;
 	--bgd-light: #E5E5E5;
 	--bgd-accent: #F1F1F1;
 
+	// For text
 	--main-text-color: #B9B9B9;
 	--dark-text-color: #3D3D3D;
 	--deepdark-text-color: #111518;
 	--light-text-color: #ffffff;
+
+	// TRANSITION
+	--transition: 250ms linear;
 }

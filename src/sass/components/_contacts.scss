@@ -2,10 +2,35 @@
 	padding: 55px 0;
 	text-align: center;
 	background-color: var(--bgd-dark);
-	background-image: url('../images/bg-form/registration-bg-sm@2x-min.png');
+	background-image: url('../images/bg-form/registration-bg-sm-min.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+
+	@include mq(retina) {
+		background-image: url('../images/bg-form/registration-bg-sm@2x-min.png');
+	}
+
+
+	@include mq(tab) {
+		background-image: url('../images/bg-form/registration-bg-md-min.png');
+
+		@include mq(retina) {
+			background-image: url('../images/bg-form/registration-bg-md@2x-min.png');
+		}
+	}
+
+	@include mq(desk) {
+		background-image: url('../images/bg-form/registration-bg-big-min.png');
+
+		@include mq(retina) {
+			background-image: url('../images/bg-form/registration-bg-big@2x-min.png');
+		}
+	}
+
+	@include mq(tab) {
+		padding: 100px 0 62px 0;
+	}
 
 	&__title {
 		font-weight: 800;
@@ -13,6 +38,11 @@
 		line-height: calc(18 / 14);
 		letter-spacing: 0.03em;
 		color: var(--light-text-color);
+
+		@include mq(tab) {
+			font-size: 46px;
+			line-height: calc(60 / 46);
+		}
 	}
 
 	&__accent-text {
@@ -25,11 +55,21 @@
 		font-size: 12px;
 		line-height: calc(15 / 12);
 		color: var(--light-text-color);
+
+		@include mq(tab) {
+			margin: 50px 0 0;
+			font-size: 30px;
+			line-height: calc(37 /30);
+		}
 	}
 }
 
 .form {
 	margin: 43px 0 0;
+
+	@include mq(tab) {
+		margin: 56px 0 0;
+	}
 
 	&__item {
 		position: relative;
@@ -43,7 +83,7 @@
 	&__input {
 		width: 100%;
 		height: 48px;
-		padding: 15px 15px 15px 0;
+		padding: 15px 15px 15px 100px;
 		background-color: transparent;
 		border: 1px solid var(--main-bgd-color);
 		color: var(--light-text-color);
@@ -56,12 +96,10 @@
 			border-color: #ff0000;
 		}
 
-		&--name {
-			padding-left: 80px;
-		}
-
-		&--phone {
-			padding-left: 115px;
+		@include mq(tab) {
+			width: 478px;
+			height: 70px;
+			padding: 23px 23px 23px 100px;
 		}
 	}
 
@@ -75,6 +113,10 @@
 
 	&__button {
 		margin: 50px 0 0;
+
+		@include mq(tab) {
+			margin: 80px 0 0;
+		}
 	}
 }
 

@@ -25,12 +25,12 @@ main {
 	margin: 0 auto;
 	padding: 0 20px;
 
-	@include mq(tab) {
+	@media (min-width: 768px) {
 		max-width: 768px;
 		padding: 0 40px;
 	}
 
-	@include mq(desk) {
+	@media (min-width: 1366px) {
 		max-width: 1366px;
 		padding: 0 26px;
 	}
@@ -59,7 +59,7 @@ main {
 		border-color: var(--accent);
 	}
 
-	@include mq(desk) {
+	@media (min-width: 1366px) {
 		min-width: 354px;
 	}
 
@@ -75,7 +75,7 @@ main {
 			border-color: transparent;
 		}
 
-		@include mq(desk) {
+		@media (min-width: 1366px) {
 			min-width: 336px;
 		}
 	}
@@ -91,12 +91,12 @@ main {
 	letter-spacing: 0.03em;
 	color: var(--deepdark-text-color);
 
-	@include mq(tab) {
+	@media (min-width: 768px) {
 		font-size: 26px;
 		line-height: calc(34 / 26);
 	}
 
-	@include mq(desk) {
+	@media (min-width: 1366px) {
 		font-size: 46px;
 		line-height: calc(60 / 46);
 	}

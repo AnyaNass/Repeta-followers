@@ -7,28 +7,53 @@
 	background-size: cover;
 	background-position: center;
 
-	@include mq(retina) {
+	// @include mq(retina) {
+	// 	background-image: url('../images/bg-form/registration-bg-sm@2x-min.png');
+	// }
+
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+	screen and (min-resolution: 2dppx) {
 		background-image: url('../images/bg-form/registration-bg-sm@2x-min.png');
 	}
 
-
-	@include mq(tab) {
+	@media (min-width: 768px) {
 		background-image: url('../images/bg-form/registration-bg-md-min.png');
 
-		@include mq(retina) {
+		@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
 			background-image: url('../images/bg-form/registration-bg-md@2x-min.png');
 		}
 	}
 
-	@include mq(desk) {
+	@media (min-width: 1366px) {
 		background-image: url('../images/bg-form/registration-bg-big-min.png');
 
-		@include mq(retina) {
+		@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
 			background-image: url('../images/bg-form/registration-bg-big@2x-min.png');
 		}
 	}
 
-	@include mq(tab) {
+	// @include mq(tab) {
+	// 	background-image: url('../images/bg-form/registration-bg-md-min.png');
+
+	// 	@include mq(retina) {
+	// 		background-image: url('../images/bg-form/registration-bg-md@2x-min.png');
+	// 	}
+	// }
+
+	// @include mq(desk) {
+	// 	background-image: url('../images/bg-form/registration-bg-big-min.png');
+
+	// 	@include mq(retina) {
+	// 		background-image: url('../images/bg-form/registration-bg-big@2x-min.png');
+	// 	}
+	// }
+
+	@media (min-width: 768px) {
 		padding: 100px 0 62px 0;
 	}
 
@@ -39,7 +64,12 @@
 		letter-spacing: 0.03em;
 		color: var(--light-text-color);
 
-		@include mq(tab) {
+		@media (min-width: 768px) {
+			font-size: 26px;
+			line-height: calc(34 / 26);
+		}
+
+		@media (min-width: 1366px) {
 			font-size: 46px;
 			line-height: calc(60 / 46);
 		}
@@ -56,8 +86,13 @@
 		line-height: calc(15 / 12);
 		color: var(--light-text-color);
 
-		@include mq(tab) {
+		@media (min-width: 768px) {
 			margin: 50px 0 0;
+			font-size: 16px;
+			line-height: calc(20 / 16);
+		}
+
+		@media (min-width: 1366px) {
 			font-size: 30px;
 			line-height: calc(37 /30);
 		}
@@ -67,7 +102,7 @@
 .form {
 	margin: 43px 0 0;
 
-	@include mq(tab) {
+	@media (min-width: 768px) {
 		margin: 56px 0 0;
 	}
 
@@ -88,15 +123,19 @@
 		border: 1px solid var(--main-bgd-color);
 		color: var(--light-text-color);
 
-		&:not(:placeholder-shown):required:valid {
-			border-color: var(--main-bgd-color);
-		}
-
 		&:not(:placeholder-shown):required:invalid {
 			border-color: #ff0000;
 		}
 
-		@include mq(tab) {
+		&:not(:placeholder-shown):required:valid {
+			border-color: var(--main-bgd-color);
+		}
+
+		@media (min-width: 768px) {
+			width: 390px;
+		}
+
+		@media (min-width: 1366px) {
 			width: 478px;
 			height: 70px;
 			padding: 23px 23px 23px 100px;
@@ -109,12 +148,19 @@
 		left: 28px;
 		transform: translateY(-50%);
 
+		@media (min-width: 768px) {
+			left: 177px;
+		}
+
+		@media (min-width: 1366px) {
+			left: 456px;
+		}
 	}
 
 	&__button {
 		margin: 50px 0 0;
 
-		@include mq(tab) {
+		@media (min-width: 768px) {
 			margin: 80px 0 0;
 		}
 	}

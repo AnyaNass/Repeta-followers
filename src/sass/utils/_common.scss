@@ -1,10 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
-	font-weight: 700;
 	color: var(--main-text-color);
 	background-color: var(--main-bgd-color);
 	letter-spacing: 0.08em;
@@ -20,16 +18,18 @@ main {
 }
 
 .container {
+	max-width: 480px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
+	outline:1px solid red;
 
-	@include mq(tab) {
+	@media (min-width: 768px) {
 		max-width: 768px;
 		padding: 0 40px;
 	}
 
-	@include mq(desk) {
+	@media (min-width: 1366px) {
 		max-width: 1366px;
 		padding: 0 26px;
 	}
@@ -44,12 +44,14 @@ main {
 	border: 2px solid transparent;
 
 	color: var(--light-text-color);
+	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 12px;
 	line-height: calc(15 / 12);
 	letter-spacing: 0.08em;
 
-	transition: background-color var(--transition), color var(--transition), border var(--transition);
+	transition: background-color var(--transition), color var(--transition),
+		border var(--transition);
 
 	&:hover,
 	&:focus {
@@ -58,8 +60,9 @@ main {
 		border-color: var(--accent);
 	}
 
-	@include mq(desk) {
+	@media (min-width: 1366px) {
 		min-width: 354px;
+		height: 70px;
 	}
 
 	&--header {
@@ -74,12 +77,11 @@ main {
 			border-color: transparent;
 		}
 
-		@include mq(desk) {
+		@media (min-width: 1366px) {
 			min-width: 336px;
 		}
 	}
 }
-
 
 // Для заголовків секцій клас .section-title (темна за замовчуванням) і модифікатор .section-title--light
 .section-title {
@@ -90,22 +92,20 @@ main {
 	letter-spacing: 0.03em;
 	color: var(--deepdark-text-color);
 
-	@include mq(tab) {
+	@media (min-width: 768px) {
 		font-size: 26px;
 		line-height: calc(34 / 26);
 	}
 
-	@include mq(desk) {
+	@media (min-width: 1366px) {
 		font-size: 46px;
 		line-height: calc(60 / 46);
 	}
-
 
 	&--light {
 		color: var(--light-text-color);
 	}
 }
-
 
 // Для скритих заголовків
 .hidden {

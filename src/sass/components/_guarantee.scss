@@ -56,6 +56,14 @@
 		line-height: 1.4;
 	}
 
+	&:last-child {
+		margin-bottom: 0;
+
+		&::before {
+			display: none;
+		}
+	}
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -63,14 +71,6 @@
 		left: 7px;
 		border-left: 1px dashed var(--main-text-color);
 		height: 90%;
-
-		&:last-child {
-			margin-bottom: 0;
-
-			&::before {
-				display: none;
-			}
-		}
 
 		@media screen and (min-width: 1366px) {
 			height: 80%;

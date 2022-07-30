@@ -38,7 +38,7 @@
   color: var(--dark-text-color);
 
   padding-left: 35px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 
   &::before {
     content: '';
@@ -46,14 +46,24 @@
     top: 26px;
     left: 7px;
     border-left: 1px dashed var(--main-text-color);
+<<<<<<< Updated upstream
     height: 68px;
     @media screen and (min-width: 1366px) {
       left: 11px;
+=======
+    height: 90%;
+
+    @media screen and (min-width: 768px) {
+      height: 75%;
+    }
+    @media screen and (min-width: 1366px) {
+      height: 80%;
+>>>>>>> Stashed changes
     }
   }
 
   &:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
     &::before {
       display: none;
     }
@@ -61,7 +71,7 @@
 
   @media screen and (min-width: 768px) {
     padding-left: 39px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: 1366px) {
     padding-left: 45px;

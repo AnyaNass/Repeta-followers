@@ -46,11 +46,6 @@
     top: 26px;
     left: 7px;
     border-left: 1px dashed var(--main-text-color);
-<<<<<<< Updated upstream
-    height: 68px;
-    @media screen and (min-width: 1366px) {
-      left: 11px;
-=======
     height: 90%;
 
     @media screen and (min-width: 768px) {
@@ -58,7 +53,7 @@
     }
     @media screen and (min-width: 1366px) {
       height: 80%;
->>>>>>> Stashed changes
+      left: 11px;
     }
   }
 

@@ -47,6 +47,9 @@
     left: 7px;
     border-left: 1px dashed var(--main-text-color);
     height: 68px;
+    @media screen and (min-width: 1366px) {
+      left: 11px;
+    }
   }
 
   &:last-child {
@@ -79,6 +82,11 @@
   fill: var(--accent);
   width: 15px;
   height: 20px;
+
+  @media screen and (min-width: 1366px) {
+    width: 22px;
+    height: 30px;
+  }
 }
 
 .guarantee-list__link {

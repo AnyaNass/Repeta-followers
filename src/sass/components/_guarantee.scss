@@ -44,37 +44,11 @@
 	padding-left: 35px;
 	margin-bottom: 25px;
 
-	@media screen and (min-width: 768px) {
-		padding-left: 39px;
-		margin-bottom: 20px;
-	}
-
-	@media screen and (min-width: 1366px) {
-		padding-left: 45px;
-
-		font-size: 20px;
-		line-height: 1.4;
-	}
-
 	&:last-child {
 		margin-bottom: 0;
 
 		&::before {
 			display: none;
-		}
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		top: 26px;
-		left: 7px;
-		border-left: 1px dashed var(--main-text-color);
-		height: 90%;
-
-		@media screen and (min-width: 1366px) {
-			height: 80%;
-			left: 11px;
 		}
 	}
 

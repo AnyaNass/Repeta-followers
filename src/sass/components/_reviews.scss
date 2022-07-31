@@ -10,6 +10,8 @@
 .reviews-cards {
   font-weight: 500;
   text-align: center;
+  min-width: 0;
+  margin-bottom: 52px;
 
   @media screen and (min-width: 480px) {
     width: 438px;
@@ -137,12 +139,6 @@
   color: var(--dark-text-color);
   font-weight: 500;
 
-  &_accent-color {
-    display: block;
-    text-decoration: underline;
-    color: var(--accent);
-  }
-
   @media screen and (min-width: 768px) {
     font-size: 12px;
     line-height: 1.66;
@@ -154,36 +150,119 @@
   }
 }
 
-.reviews-customers-field {
+.cards-field__text_accent-color {
+  display: block;
+  text-decoration: underline;
+  color: var(--accent);
+  margin: 0 auto;
+  letter-spacing: 0.08em;
+
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.66;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
+
+.cards-field__text_read-more {
+  font-weight: 500;
+  color: var(--dark-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.66;
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+/* Слайдер */
+.slick-slider {
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+/* Слайд */
+.slick-slide {
+}
+
+.reviews-cards-list .slick-arrow {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  font-size: 0;
+  width: 27px;
+  height: 16px;
+  fill: var(--accent);
+}
+/* Стрелка влево */
+.reviews-cards-list .slick-arrow.slick-prev {
+  background-image: url('../images/icon-arrow-left.svg');
+  @media screen and (max-width: 767px) {
+    top: 94%;
+    left: 0;
+  }
   @media screen and (min-width: 768px) {
+    left: -14px;
+  }
+  @media screen and (min-width: 1366px) {
+    left: 60px;
+  }
+}
+/* Стрелка вправо */
+.reviews-cards-list .slick-arrow.slick-next {
+  right: 60px;
+  background-image: url('../images/icon-arrow-right.svg');
+  @media screen and (max-width: 767px) {
+    top: 94%;
+    right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    right: -14px;
+  }
+  @media screen and (min-width: 1366px) {
+    right: 60px;
   }
 }
 
-.reviews-link {
-  @media screen and (min-width: 768px) {
-    // &--left {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    // }
-    // &--right {
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    // }
-  }
-}
-
-.reviews-list {
+/* Точки (булиты) */
+.reviews-cards-list .slick-dots {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-}
 
-.reviews-list__item {
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
+}
+.reviews-cards-list .slick-dots li {
+  list-style: none;
+  width: 54px;
+  height: 54px;
+  background-position: center;
+  background-size: contain;
+
   @media screen and (max-width: 767px) {
     &:nth-child(-n + 4) {
       display: none;
@@ -192,16 +271,56 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+
+  &:nth-child(1) {
+    background-image: url(../images/feedback/avatar-01-min.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/feedback/avatar-01@2x-min.png);
+    }
+  }
+  &:nth-child(2) {
+    background-image: url(../images/feedback/avatar-02-min.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/feedback/avatar-02@2x-min.png);
+    }
+  }
+  &:nth-child(3) {
+    background-image: url(../images/feedback/avatar-03-min.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/feedback/avatar-03@2x-min.png);
+    }
+  }
+  &:nth-child(4) {
+    background-image: url(../images/feedback/avatar-04-min.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/feedback/avatar-04@2x-min.png);
+    }
+  }
+  &:nth-child(5) {
+    background-image: url(../images/feedback/avatar-05-min.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/feedback/avatar-05@2x-min.png);
+    }
+  }
+  &:nth-child(6) {
+    background-image: url(../images/feedback/avatar-06-min.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/feedback/avatar-06@2x-min.png);
+    }
+  }
+  &:nth-child(7) {
+    background-image: url(../images/feedback/avatar-07-min.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/feedback/avatar-07@2x-min.png);
+    }
+  }
 }
-
-.reviews-list__pic {
-  width: 54px;
-  height: 54px;
+/* Активная точка */
+.reviews-cards-list .slick-dots li.slick-active {
+  border-radius: 50%;
+  border: 2px solid var(--accent);
 }
-
-.reviews-link__icon {
-  width: 25px;
-  height: 13px;
-
-  fill: var(--accent);
+/* Элемент точки */
+.reviews-cards-list .slick-dots li button {
+  font-size: 0;
 }

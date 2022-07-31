@@ -1,2 +1,0 @@
-console.log(IMask);IMask(document.getElementById("user-phone"),{mask:"+{38}(\\000)000 00 00",lazy:!1,placeholderChar:" "});(()=>{const e=document.querySelector("[data-menu-open]"),t=document.querySelector("[data-menu-close]"),o=document.querySelector("[data-menu]"),n=document.querySelector("body");function a(){const t="true"===e.getAttribute("aria-expanded")||!1;e.setAttribute("aria-expanded",!t),o.classList.toggle("is-open"),n.classList.toggle("no-scroll")}e.addEventListener("click",a),t.addEventListener("click",a)})();
-//# sourceMappingURL=index.f23df7d6.js.map

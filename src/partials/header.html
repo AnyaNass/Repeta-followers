@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container header__container">
-    <a class="link logo header_logo" href="#">
-      <svg width="128" height="45">
+    <a class="link logo header__logo" href="#">
+      <svg class="header__logo-svg" width="80" height="30">
         <use href="./images/symbol-defs.svg#icon-logo"></use>
       </svg>
     </a>
@@ -30,16 +30,18 @@
   </div>
 </header>
 <div class="modal-menu" data-menu>
-  <a href="#" class="modal-logo">
-    <svg class="modal-logo__svg" width="80" height="30">
-      <use href="./images/symbol-defs.svg#icon-logo-white"></use>
-    </svg>
-  </a>
-  <button class="modal-menu__btn" data-menu-close>
-    <svg height="15" width="15">
-      <use href="./images/symbol-defs.svg#icon-close"></use>
-    </svg>
-  </button>
+  <div class="modal-menu__head" >
+    <a href="#" class="modal-logo">
+      <svg class="modal-logo__svg" width="80" height="30">
+        <use href="./images/symbol-defs.svg#icon-logo-white"></use>
+      </svg>
+    </a>
+    <button class="modal-menu__btn" data-menu-close>
+      <svg height="15" width="15">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
 
   <ul class="modal-menu__nav">
     <li class="nav__item">
@@ -59,3 +61,5 @@
     consultation by phone
   </button>
 </div>
+
+

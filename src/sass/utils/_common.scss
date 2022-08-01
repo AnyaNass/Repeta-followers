@@ -7,9 +7,13 @@ body {
 	background-color: var(--main-bgd-color);
 	letter-spacing: 0.08em;
 	background-image: url('../images/hero/wave-bg.svg');
-	background-position: center;
+	background-position: 0 450px;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+
+	@media (min-width: 768px) {
+		background-position: top center;
+	}
 
 	&.no-scroll {
 		overflow: hidden;

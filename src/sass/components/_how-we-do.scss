@@ -56,13 +56,13 @@
 	@media (min-width: 1366px) {
 		padding: 35px 28px;
 		flex-basis: calc((100% - 60px) / 3);
-	
+
 	}
 
 	&:hover,
 	&:focus {
 		background-color: var(--accent);
-		transition:var (--transiton);
+		transition: var (--transiton);
 	}
 
 
@@ -110,6 +110,8 @@
 		display: block;
 		left: 50%;
 		bottom: -20px;
+		width: 20px;
+		height: 2px;
 		transform: translate(-50%, -50%);
 
 		background-color: var(--accent);

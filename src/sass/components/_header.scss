@@ -166,17 +166,15 @@
 }
 
 .nav__item {
-	<<<<<<< HEAD color: #ffffff;
+	color: #ffffff;
 	transition: transform var(--transition);
-	=======color: #ffffff;
+	color: #ffffff;
 	transition: color var(--transition);
 
-	>>>>>>>io-hero &:focus,
+	&:focus,
 	&:hover {
 		color: var(--accent);
 	}
-
-	<<<<<<< HEAD=======>>>>>>>io-hero
 }
 
 .button__menu {

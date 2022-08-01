@@ -62,7 +62,7 @@
 	&:hover,
 	&:focus {
 		background-color: var(--accent);
-		transition:var (--transiton);
+		
 	}
 
 
@@ -111,10 +111,10 @@
 		left: 50%;
 		bottom: -20px;
 		transform: translate(-50%, -50%);
-
+		width: 20px;
+		height: 2px;
 		background-color: var(--accent);
 
-		background-color: var(--accent);
 
 		.how-we-do__item:hover & {
 			background-color: var(--main-bgd-color);

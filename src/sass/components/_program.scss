@@ -278,6 +278,12 @@
 	}
 }
 
+.program-list__item {
+	&:hover .program-list__title::before {
+		transform: scale(1.45);
+	}
+}
+
 // Декоративное изображенеи
 
 // .program-list__item:last-child {
@@ -353,11 +359,5 @@
 // 				}
 // 			}
 // 		}
-// 	}
-// }
-
-// .program-list__item {
-// 	&:hover .program-list__title::before {
-// 		transform: scale(1.45);
 // 	}
 // }

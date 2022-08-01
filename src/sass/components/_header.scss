@@ -46,13 +46,14 @@
 
 .header__nav {
   display: none;
-  transition: transform var(--transition);
+  
   @media screen and (min-width: 1366px) {
     display: flex;
   }
 }
 
 .nav__list-item {
+  transition: transform var(--transition);
   &:hover,
   &:focus {
     color: var(--accent);

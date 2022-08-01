@@ -57,8 +57,7 @@
 	}
 }
 
-.nav__list-item {
-
+.nav__link {
 	transition: color var(--transition);
 
 	&:hover,
@@ -70,11 +69,6 @@
 .button--header {
 	display: none;
 
-	// @media screen and (min-width: 480px) {
-	//   display: block;
-	//   text-transform: uppercase;
-	//   margin-right: 40px;
-	// }
 	@media screen and (min-width: 768px) {
 		display: block;
 		text-transform: uppercase;

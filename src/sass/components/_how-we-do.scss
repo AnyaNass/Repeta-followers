@@ -44,10 +44,10 @@
 }
 
 .how-we-do__item {
-  position: relative;
 	padding: 30px 20px;
-
-  flex-basis: calc((100% - 0px) / 1);
+	cursor: pointer;
+	transition: background-color var(--transition), color var(--transition);
+	flex-basis: calc((100% - 0px) / 1);
 
   background-color: var(--main-bgd-color);
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
@@ -57,50 +57,23 @@
     flex-basis: calc((100% - 20px) / 2);
   }
 
-  @media (min-width: 1366px) {
-    padding: 35px 28px;
-    flex-basis: calc((100% - 60px) / 3);
-  }
+	@media (min-width: 1366px) {
+		padding: 35px 28px;
+		flex-basis: calc((100% - 60px) / 3);
+	
+	}
 
-  &:hover {
-    background-color: var(--accent);
-  }
-}
-
-
-.how-we-do__item:focus .how-we-do__icon {
-fill: #ffff;
-}
- 
+	&:hover,
+	&:focus {
+		background-color: var(--accent);
+		transition:var (--transiton);
+	}
 
 
 
-// .how-we-do__item:last-child {
-// margin-bottom: 40px;
-
-// @media (min-width: 1366px) {
-//   margin-bottom: 0px;
-// }
-
-
-// }
-
-
-.how-we-do__content {
-  color: var(--accent-background);
-
-  .how-we-do__item:hover  {
-    color: var(--light-text-color);
-  }
-  .how-we-do__icon:hover  {
-    fill: #ffff;
-  }
-
-  .how-we-do__item:focus  {
-    color: var(--light-text-color);
-  }
 
 }
+
 
 .how-we-do__icon {
 	fill: var(--accent);
@@ -111,13 +84,6 @@ fill: #ffff;
 
 }
 
-.how-we-do__content:hover {
-	fill: var(--main-bgd-color);
-}
-
-.how-we-do__content:focus {
-	fill: var(--main-bgd-color);
-}
 
 
 .how-we-do__subtitle {
@@ -135,31 +101,37 @@ fill: #ffff;
     margin-top: 28px;
   }
 
-  @media (min-width: 1366px) {
-    font-size: 20px;
-    margin-bottom: 32px;
-  }
+	.how-we-do__item:hover & {
+		color: var(--light-text-color);
+	}
 
 
 
+	@media (min-width: 768px) {
+		margin-top: 28px;
+	}
 
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 50%;
-    bottom: -20px;
-    transform: translate(-50%, -50%);
 
-    width: 20px;
-    height: 2px;
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 50%;
+		bottom: -20px;
+		transform: translate(-50%, -50%);
 
     background-color: var(--accent);
 
-    .how-we-do:hover & {
-      background-color: var(--main-bgd-color);
-    }
-  }
+		background-color: var(--accent);
+
+		.how-we-do__item:hover & {
+			background-color: var(--main-bgd-color);
+		}
+	}
+
+
+
+
 
 
 }

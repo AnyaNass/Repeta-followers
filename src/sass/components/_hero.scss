@@ -1,10 +1,4 @@
 .hero {
-	background-color: var(--bgd-light);
-	background-image: url('../images/hero/wave-bg.svg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	@media (min-width: 768px) {
 		padding: 35px 0;
 	}
@@ -13,17 +7,6 @@
 		position: relative;
 		padding: 0 0 75px;
 		min-height: 718px;
-
-		&::after {
-			content: url('../images/hero/hero-842.png');
-			position: absolute;
-			right: 0;
-			top: 0;
-
-			@include mq(retina) {
-				content: url('../images/hero/hero-1684.png');
-			}
-		}
 	}
 }
 
@@ -101,6 +84,9 @@
 	}
 
 	@media (min-width: 1366px) {
-		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 842px;
 	}
 }

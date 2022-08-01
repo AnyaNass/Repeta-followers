@@ -1,5 +1,4 @@
 .advantages {
-	background: #E5E5E5;
 	padding: 43px 0 70px;
 
 	@media (min-width: 1366px) {
@@ -40,6 +39,16 @@
 
 	@media (min-width: 1366px) {
 		width: 417px;
+	}
+}
+
+.advantages__svg {
+	width: 60px;
+	height: 60px;
+
+	@media (min-width: 1366px) {
+		width: 100px;
+		height: 100px;
 	}
 }
 

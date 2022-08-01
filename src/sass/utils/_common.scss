@@ -6,7 +6,10 @@ body {
 	color: var(--main-text-color);
 	background-color: var(--main-bgd-color);
 	letter-spacing: 0.08em;
-	user-select: none;
+	background-image: url('../images/hero/wave-bg.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	&.no-scroll {
 		overflow: hidden;

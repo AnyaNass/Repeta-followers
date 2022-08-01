@@ -28,6 +28,57 @@
 			background-color: var(--light-text-color);
 		}
 	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: -60px;
+
+		width: 120px;
+		height: 137px;
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(../images/program/program-bg_s.png);
+
+		// mobile retina screen
+		@include mq(retina) {
+			background-image: url(../images/program/program-bg@2x_s.png);
+		}
+
+		@media (min-width: 768px) {
+			bottom: 0;
+			right: 0;
+
+			width: 374px;
+			height: 273px;
+
+			background-image: url(../images/program/program-bg_m.png);
+
+			//  mobile retina screen
+			@include mq(retina) {
+				background-image: url(../images/program/program-bg@2x_m.png);
+			}
+		}
+
+		@media (min-width: 1366px) {
+			position: absolute;
+			bottom: -19%;
+			left: 0;
+			width: 672px;
+			height: 502px;
+
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url(../images/program/program-bg_l.png);
+
+			// mobile retina screen
+			@include mq(retina) {
+				background-image: url(../images/program/program-bg@2x_l.png);
+			}
+		}
+	}
 }
 
 .section-title--light {
@@ -229,84 +280,84 @@
 
 // Декоративное изображенеи
 
-.program-list__item:last-child {
-	.semestr-list__title {
-		position: relative;
+// .program-list__item:last-child {
+// 	.semestr-list__title {
+// 		position: relative;
 
-		&::after {
-			content: '';
-			position: absolute;
-			bottom: 0;
+// 		// &::after {
+// 		// 	content: '';
+// 		// 	position: absolute;
+// 		// 	bottom: 0;
 
-			transform: translate(100px, 147px);
+// 		// 	transform: translate(100px, 147px);
 
-			width: 120px;
-			height: 137px;
+// 		// 	width: 120px;
+// 		// 	height: 137px;
 
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-image: url(../images/program/program-bg_s.png);
+// 		// 	background-size: cover;
+// 		// 	background-repeat: no-repeat;
+// 		// 	background-image: url(../images/program/program-bg_s.png);
 
-			// mobile retina screen
-			@include mq(retina) {
-				background-image: url(../images/program/program-bg@2x_s.png);
-			}
+// 		// 	// mobile retina screen
+// 		// 	@include mq(retina) {
+// 		// 		background-image: url(../images/program/program-bg@2x_s.png);
+// 		// 	}
 
-			@media (min-width: 768px) {
-				bottom: 0;
+// 		// 	@media (min-width: 768px) {
+// 		// 		bottom: 0;
 
-				transform: translate(267px, 160px);
+// 		// 		transform: translate(267px, 160px);
 
-				width: 374px;
-				height: 273px;
+// 		// 		width: 374px;
+// 		// 		height: 273px;
 
-				background-image: url(../images/program/program-bg_m.png);
+// 		// 		background-image: url(../images/program/program-bg_m.png);
 
-				// mobile retina screen
-				@include mq(retina) {
-					background-image: url(../images/program/program-bg@2x_m.png);
-				}
-			}
+// 		// 		// mobile retina screen
+// 		// 		@include mq(retina) {
+// 		// 			background-image: url(../images/program/program-bg@2x_m.png);
+// 		// 		}
+// 		// 	}
 
-			@media (min-width: 1366px) {
-				display: none;
-			}
-		}
-	}
-}
+// 		// 	@media (min-width: 1366px) {
+// 		// 		display: none;
+// 		// 	}
+// 		// }
+// 	}
+// }
 
-@media (min-width: 1366px) {
-	.program-list__item:first-child {
-		.semestr-list__item:last-child {
-			.semestr-list__title {
-				position: relative;
+// @media (min-width: 1366px) {
+// 	.program-list__item:first-child {
+// 		.semestr-list__item:last-child {
+// 			.semestr-list__title {
+// 				position: relative;
 
-				&::after {
-					content: '';
-					position: absolute;
-					bottom: 0;
+// 				&::after {
+// 					content: '';
+// 					position: absolute;
+// 					bottom: 0;
 
-					transform: translate(-183px, 669px);
+// 					transform: translate(-183px, 669px);
 
-					width: 672px;
-					height: 502px;
+// 					width: 672px;
+// 					height: 502px;
 
-					background-size: cover;
-					background-repeat: no-repeat;
-					background-image: url(../images/program/program-bg_l.png);
+// 					background-size: cover;
+// 					background-repeat: no-repeat;
+// 					background-image: url(../images/program/program-bg_l.png);
 
-					// mobile retina screen
-					@include mq(retina) {
-						background-image: url(../images/program/program-bg@2x_l.png);
-					}
-				}
-			}
-		}
-	}
-}
+// 					// mobile retina screen
+// 					@include mq(retina) {
+// 						background-image: url(../images/program/program-bg@2x_l.png);
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-.program-list__item {
-	&:hover .program-list__title::before {
-		transform: scale(1.45);
-	}
-}
+// .program-list__item {
+// 	&:hover .program-list__title::before {
+// 		transform: scale(1.45);
+// 	}
+// }

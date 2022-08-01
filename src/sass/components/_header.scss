@@ -53,11 +53,15 @@
 }
 
 .nav__list-item {
-  transition: transform var(--transition);
-  &:hover,
-  &:focus {
-    color: var(--accent);
-  }
+
+
+	transition: color var(--transition);
+
+	&:hover,
+	&:focus {
+		color: var(--accent);
+	}
+
 }
 
 .button--header {
@@ -154,12 +158,16 @@
 }
 
 .nav__item {
-  color: #ffffff;
-  transition: transform var(--transition);
-  &:focus,
-  &:hover {
-    color: var(--accent);
-  }
+
+
+	color: #ffffff;
+	transition: color var(--transition);
+
+	&:focus,
+	&:hover {
+		color: var(--accent);
+	}
+
 }
 .button__menu {
   background-color: transparent;

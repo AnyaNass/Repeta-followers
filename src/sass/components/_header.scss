@@ -58,7 +58,9 @@
 }
 
 .nav__list-item {
-	transition: transform var(--transition);
+
+
+	transition: color var(--transition);
 
 	&:hover,
 	&:focus {
@@ -165,13 +167,17 @@
 }
 
 .nav__item {
-	color: #ffffff;
+	<<<<<<< HEAD color: #ffffff;
 	transition: transform var(--transition);
+	=======color: #ffffff;
+	transition: color var(--transition);
 
-	&:focus,
+	>>>>>>>io-hero &:focus,
 	&:hover {
 		color: var(--accent);
 	}
+
+	<<<<<<< HEAD=======>>>>>>>io-hero
 }
 
 .button__menu {

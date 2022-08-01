@@ -51,7 +51,6 @@
 
 .header__nav {
 	display: none;
-	transition: transform var(--transition);
 
 	@media screen and (min-width: 1366px) {
 		display: flex;
@@ -59,6 +58,7 @@
 }
 
 .nav__list-item {
+	transition: transform var(--transition);
 
 	&:hover,
 	&:focus {
@@ -157,7 +157,7 @@
 		font-size: 26px;
 		line-height: calc(47 / 26);
 		justify-content: center;
-		gep: 25px;
+		gap: 25px;
 		align-items: center;
 	}
 

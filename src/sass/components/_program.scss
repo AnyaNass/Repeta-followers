@@ -230,7 +230,9 @@
 }
 
 .program-list__item {
-	&:hover .program-list__title::before {
+
+	&:hover .program-list__title::before,
+	&:focus .program-list__title::before {
 		transform: scale(1.45);
 	}
 }

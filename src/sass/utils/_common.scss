@@ -37,6 +37,10 @@ body {
 	}
 }
 
+.main {
+	overflow: hidden;
+}
+
 // Для кнопки клас .button та модифікатор .button--header
 .button {
 	width: 260px;
